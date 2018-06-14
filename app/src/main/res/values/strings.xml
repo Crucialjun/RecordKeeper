@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Record Keeper</string>
+    <string name="TeamA">Team A</string>
+    <string name="TeamB">Team B</string>
+    <string name="zero">0</string>
+    <string name="goals">goals</string>
+    <string name="fouls">fouls</string>
+    <string name="corners">corners</string>
+    <string name="yellow">Yellow - Cards</string>
+    <string name="red">Red - Cards</string>
+    <string name="penalty">penalties</string>
+    <string name="shots">Shots On Target</string>
+    <string name="goal">goal</string>
 </resources>
