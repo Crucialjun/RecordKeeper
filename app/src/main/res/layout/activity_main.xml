@@ -6,24 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/soccerback"
+        android:scaleType="centerCrop"
+        android:alpha=".99"
+        />
+
     <LinearLayout
         android:id="@+id/Teams"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/TeamA"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/vhiena"
+            android:textSize="52sp"
+            android:textColor="@android:color/black"
+            />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/TeamB"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/vhiena"
+            android:textSize="52sp"
+            android:textColor="@android:color/black"
+            />
 
     </LinearLayout>
 
@@ -31,26 +50,47 @@
         android:id="@+id/scores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/Teams">
+        android:layout_below="@id/Teams"
+        android:layout_margin="8dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/zero" />
+            android:text="@string/zero"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/harriet"
+            android:textColor="#6C734A"
+            android:textSize="48sp"
+            android:textAlignment="center"
+
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="@string/goals"
-            android:textAllCaps="true" />
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/harriet"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="36sp"
+            android:textAlignment="center"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/zero" />
+            android:text="@string/zero"
+            android:textStyle="bold"
+            android:fontFamily="@font/harriet"
+            android:textColor="#6C734A"
+            android:textSize="48sp"
+            android:textAlignment="center"
+            />
 
 
     </LinearLayout>
@@ -65,7 +105,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="8dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,12 +115,20 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/fouls" />
+                    android:text="@string/fouls"
+                    android:fontFamily="@font/hansief"
+                    />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -92,9 +141,15 @@
                     android:text="@string/corners" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -107,9 +162,15 @@
                     android:text="@string/yellow" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -122,9 +183,14 @@
                     android:text="@string/red" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
             </LinearLayout>
 
             <LinearLayout
@@ -137,9 +203,14 @@
                     android:text="@string/penalty" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
             </LinearLayout>
 
             <LinearLayout
@@ -152,9 +223,14 @@
                     android:text="@string/shots" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
             </LinearLayout>
 
             <LinearLayout
@@ -167,13 +243,178 @@
                     android:text="@string/goal" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/zero" />
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
             </LinearLayout>
 
 
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fouls"
+                    android:fontFamily="@font/hansief"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/corners" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yellow" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/penalty" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shots" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/goal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zero"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:fontFamily="@font/hansief"
+                    android:textSize="32sp"
+                    android:textColor="#BFDA23"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
 
 
     </LinearLayout>
@@ -181,7 +422,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true"
+        android:text="reset"
+        android:textAllCaps="true"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
 
 
 </RelativeLayout>
